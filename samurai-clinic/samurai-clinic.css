@@ -1,0 +1,489 @@
+body {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #333333;
+  max-width: 1280px; 
+}
+
+/* ヘッダー */
+.header-logo {
+  width: 44%;
+  padding-left: 3.5%;
+}
+.logo {
+  padding-right: 3%;
+}
+.clinic {
+  font-size: 124%;
+  font-weight: bold;
+  color: #96C519;
+}
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 0.5rem;
+
+}
+header nav {
+  width: 60%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+} 
+.header-nav li {
+  font-size: 82%;
+  color: white;
+}
+.nav-button {
+  background-color: #0C4324;
+  font-weight: bold;
+  padding: 2% 3%;
+  margin-right: 4%;
+  border-radius: 0.5rem;
+}
+
+/* メインビジュアル */
+#mainvisual {
+  width: 100%;
+  position: relative;
+  height: 504px;
+}
+.mainvisual1 {
+  position: absolute;
+  top: 0;
+  height: 584px;
+  right: 0;
+  z-index: 20;
+  width: 76.5%;
+}
+.mainvisual-back {
+  position: absolute;
+  top: 0%;
+  right: 31%;
+  z-index: 10;
+}
+.scroll {
+  position: absolute;
+  bottom: -9.5%;
+  right: 2.5%;
+  z-index: 40;
+}
+/* タイトル */
+.title {
+  position: relative;
+  writing-mode: tb;
+  letter-spacing: 0.32em;
+  font-size: 190%;
+  font-family: Shippori Mincho;
+  color: #468459;
+  line-height: 1.6;
+  z-index: 50;
+  padding-top: 11.1%;
+  padding-left: 7.5%;
+}
+.title-line1 {
+  position: absolute;
+  top: 27.5%;
+  left: 15.1%;
+  z-index: 20;
+}
+.title-line2 {
+  position: absolute;
+  top: 27.5%;
+  left: 11.1%;
+  z-index: 20;
+}
+.mainvisual-shadow1 {
+position: absolute;
+top: 5%;
+left: 6%;
+z-index: 10;
+}
+.mainvisual-shadow2 {
+  position: absolute;
+  top: 57%;
+  left: 3%;
+  z-index: 10;
+}
+/* お知らせ */
+#news {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin-right: 7.5rem;
+  margin-left: 6.3rem;
+  margin-top: 4.6rem;
+
+}
+#news dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#news-h2 {
+  color: #468459;
+  font-weight: bold;
+  font-size: 1.4rem
+
+}
+#news-h2 span {
+  font-weight: normal;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  font-size: 1.1rem;
+}
+#news dt {
+  font-weight: normal;
+}
+.news-date {
+  color: white;
+  background-color: #468459;
+  padding: 0.1rem 1.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+  margin-right: 1.7rem;
+}
+#news p {
+  font-size: 1rem;
+  letter-spacing: -0.1rem;
+  margin-left: auto; 
+}
+/* コンセプト */
+#concept {
+  height: 50rem;
+  position: relative;
+}
+.concept-back p {
+  position: absolute;
+  top: 11.6rem;
+  left: 7.8rem;
+  font-weight: 400;
+  color: #e7edd4;
+  opacity: 0.5;
+  font-family: "Merriweather Sans";
+  font-size: 8rem;
+  z-index: 10;
+
+}
+.back-icon {
+  position: absolute;
+  bottom: -3rem;
+  right: 0rem;
+  z-index: 10;
+}
+
+.concept-detail {
+  position: absolute;
+  z-index: 20;
+}
+.concept-detail {
+  display: flex;
+}
+#concept-h2 {
+  color: #468459;
+  font-weight: bold;
+  font-size: 1.4rem
+}
+#concept-h2::before {
+  content: url(img/icon.png);
+  padding-right: 0.3rem;
+}
+.concept-h2-jap {
+  color: #468459;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.concept-left  {
+  margin-top: 7rem;
+  margin-left: 16rem;
+  width: 26%;
+}
+.concept-left h3 {
+  color: #468459;
+  margin: 1.9rem 0;
+  font-size: 2rem;
+  line-height: 3.5rem;
+
+}
+.concept-left p {
+  margin: 0.75rem 0;
+  line-height: 1.4rem;
+  margin-bottom: 1.5rem;
+
+}
+.concept-button {
+  text-align: right;
+  margin-right: 1.8rem;
+}
+.simple-button {
+  border: 1px solid black;
+  padding: 0.5rem 1.9rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+.concept-right {
+  margin-left: 4%;
+  margin-top: 12%;
+}
+/* コース料金 */
+#course {
+  position: relative;
+  top: 8rem;
+}
+
+.section-title {
+  margin-top: 4.5rem;
+  color: #468459;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.section-title::before {
+  content: url(img/sectiontitle2.png);
+  margin-right: 1rem;
+}
+.section-title::after {
+  content: url(img/sectiontitle1.png);
+  margin-left: 1rem;
+}
+.course-back1{
+  position: absolute;
+  width: 100%;
+  height: 975px;
+  top: -11px;
+  left: 0;
+  z-index: 10;
+}
+.course-back2{
+  position: absolute;
+  width: 100%;
+  top: -38px;
+  left: 0;
+  z-index: 10;
+}
+
+.course-back p {
+  position: absolute;
+  top: 11.6rem;
+  left: 7.8rem;
+  font-weight: 400;
+  color: #e7edd4;
+  opacity: 0.5;
+  font-family: "Merriweather Sans";
+  font-size: 8rem;
+  z-index: 20
+
+}
+.course-back-icon {
+  position: absolute;
+  top: 600px;
+  right: 0;
+  z-index: 20;
+}
+
+.course-cover {
+  position: absolute;
+  z-index: 30;
+  margin: 0 auto; 
+  width: 100%;
+  text-align: center;
+}
+.section-p  {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  color: #468459;
+}
+.course-content {
+  display: flex;
+  justify-content: center;
+
+}
+.course1 {
+  margin-right: 5rem;
+}
+.course-img {
+  border-radius: 2rem;
+}
+.course-detail {
+  text-align: left;
+}
+.section-h3 {
+  color: #468459;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 2.3rem;
+  padding-bottom: 1rem;
+}
+.course-detail li {
+  list-style: disc;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  list-style-position: inside;
+  margin-left: 1.5rem;
+
+}
+.course-button {
+  margin-top: 1rem;
+}
+/* お客様の声 */
+#customer {
+  position: relative;
+  top: 65rem;
+  text-align: center;
+  width: 100%;
+}
+.customer-top-img {
+  width: 100%;
+  padding: 0;
+  height: 370px;
+}
+.customer-title {
+  background-color: white;
+  border-radius: 65%;
+  width: 40%;
+  padding: 0;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  margin: 0 auto;
+}
+
+.customer-content {
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-bottom: 2.5rem;
+}
+.customer-content div {
+  width: 74%;
+}
+.customer-img {
+  border-radius: 50%;
+}
+.customer-h3 {
+  color: #468459;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.customer-p {
+  text-align: left;
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+/* アクセス */
+#access {
+  position: relative;
+  top: 67rem;
+  left: 0;
+  width: 100%;
+  background-color: #F0F5E1;
+  height: 700px;
+  text-align: center;
+}
+.access-back {
+  width: 100%;
+}
+#access h2 {
+  margin-top: 2rem;
+}
+.access-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 80%;
+}
+.access-info {
+  text-align: left;
+}
+#station {
+  color: #468459;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#address {
+  line-height: 1.4rem;
+}
+#tel {
+  color: #468459;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+#tel-number {
+  color: #468459;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+.reservation-button {
+  margin-top: 2rem;
+  padding: 1rem 1.4rem;
+  color: white;
+  border-radius: 0.3rem;
+  background-color: #1B9240;
+}
+.scroll-button {
+  position: absolute;
+  right: 3%;
+  bottom: -7%;
+  z-index: 30;
+}
+/* フッター */
+footer {
+  position: relative;
+  z-index: 20;
+  top: 67rem;
+}
+.footer-nav-back {
+  background-color: #F0F5E1;
+}
+.footer-nav-cover {
+  display: flex;
+  justify-content: space-around;
+  height: 134px;
+  align-items: center;
+}
+.footer-logo {
+  height: 22px;
+}
+.footer-img {
+  padding-right:0.5rem;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+} 
+.footer-nav li {
+  padding-right: 2rem;
+}
+
+.footer-copyright {
+  background-color: #468459;
+  height: 2.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 0.7rem;
+}
